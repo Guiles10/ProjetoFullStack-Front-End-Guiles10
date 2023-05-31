@@ -1,0 +1,14 @@
+
+Olá, sejá bem vindo ao Projeto Front End => AccOrganized
+
+Para exsecutar o projeto siga o passo a passo abaixo:
+
+1 - Clone o repositório na sua Maquina.
+
+2 - utilize o comando 'npm install' para instalar as dependencias da aplicação.
+
+2 - utilize o comando 'yarn dev' para iniciar a aplicação.
+
+Obs: Lembre de clonar e executar o repositóriodo Backend deste projeto para pode utilizar todas suas funcionalidades.
+
+ link => https://github.com/Guiles10/ProjetoFullStack-BackEnd-Guiles
