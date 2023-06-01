@@ -12,9 +12,9 @@ export const RouterMain = () => {
                 <Route path='/login'        element={<Login />}/>
                 <Route path='/register'     element={<Register />}/>
  
-                {/* <Route element={<ProtectRoute />}> */}
+                <Route element={<ProtectRoute />}>
                     <Route path='/home'     element={<Home />}/>
-                {/* </Route> */}
+                </Route>
                 
                 <Route path='*'             element={<h1>Erro na Pagina!! clique <a href='https://react-entrega-template-hamburgueria-2-0-guiles10-guiles10.vercel.app/login'>aqui</a> e volte para o login </h1>}/>
             </Routes>

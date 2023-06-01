@@ -23,7 +23,7 @@ export const StyledSec = styled.section`
         font-size: 18px;
         line-height: 24px;
         font-weight: 700;
-        color: var(--color-grey-3);
+        color: var(--color-grey-0);
         margin-bottom: 15px;
     }
     .divForm > form {
@@ -37,7 +37,7 @@ export const StyledSec = styled.section`
         font-size: 12px;
         line-height: 16px;
         font-weight: 400;
-        color: var(--color-grey-3);
+        color: var(--color-grey-0);
         margin-bottom: 1px;
         padding-left: 8px;
     }
@@ -133,13 +133,13 @@ export const StyledSec = styled.section`
         font-size: 14px;
         line-height: 22px;
         font-weight: 400;
-        color: var(--color-grey-2);
+        color: var(--color-grey-0);
     }
     .divInfo > div > p > small {
         font-size: 14px;
         line-height: 22px;
         font-weight: 700;
-        color: var(--color-grey-3);
+        color: var(--color-grey-0);
     }
 
     .divInfo > div > div{

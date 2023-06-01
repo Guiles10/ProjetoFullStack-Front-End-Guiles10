@@ -28,9 +28,32 @@ export const StyledSecPerfil = styled.section`
         margin-left: 15px;
     }
 
-    .divLink{
+    .infoUser > div > p{
+        display: flex;
+
+    }
+
+    .divFone{
         display: flex;
         align-items: center;
+        margin-bottom: 15px;
+    }
+    .divEmail{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .divBtn > button{
+        background-color: var(--color-grey-3);
+        padding: 5px;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        color: var(--color-grey-0);
+    }
+    .divBtn > button:hover{
+        transform: scale(1.1);
+        color: var(--color-primary);
     }
 
     @media (max-width: 400px) {

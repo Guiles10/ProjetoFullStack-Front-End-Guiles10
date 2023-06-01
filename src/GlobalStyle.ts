@@ -40,6 +40,8 @@ export const StyledGlobal = createGlobalStyle`
         --colot-information: #155BCB;
 
         font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+
+        background-color: var(--color-grey-3);
     }
     
     ::-webkit-scrollbar{
