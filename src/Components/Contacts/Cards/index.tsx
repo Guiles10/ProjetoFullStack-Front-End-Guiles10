@@ -23,16 +23,18 @@ export const CardContacts = ({contact}: icontacts|any) => {
     return( 
         <>
         <StyledCardTechs id={contact.id}>
-                <h2>{contact.name}</h2> 
                 <div className='div'> 
+                    <h2>{contact.name}</h2> 
                     <small>{contact.telefone}</small>
                     <small>{contact.email}</small>
-                    <div className='divImg'> 
-                        <div className='divIcon'> 
-                            <BsPen id={'id'} onClick={() => OpenModel(contact.id, contact.name, contact.telefone, contact.email)}/>
-                        </div>
-                            <FaRegTrashAlt onClick={() => ExcluirContact(contact.id)}/>
+                </div>
+                <div className='divImg'> 
+                    <div className='pen'> 
+                        <BsPen id={'id'} onClick={() => OpenModel(contact.id, contact.name, contact.telefone, contact.email)}/>
                     </div>
+                        <div className='trash'>
+                            <FaRegTrashAlt onClick={() => ExcluirContact(contact.id)}/>
+                        </div>
                 </div>
         </StyledCardTechs>
         </>
