@@ -32,12 +32,12 @@ export const StyledSecHeader = styled.section`
         height: 50px;
     }
     .divHeader > a:hover{
-        background-color: var(--color-grey-3);
-        color: var(--color-grey-0);
+        background-color: var(--color-grey-1);
+        color: var(--color-grey-3);
     }
 
     .divHeader > h1 {
-        color: var(--color-grey-2);
+        color: var(--color-grey-1);
         margin: 15px;
         font-size: 30px;
     }

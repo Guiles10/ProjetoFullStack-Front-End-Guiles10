@@ -18,6 +18,7 @@ export const StyledModalEditContact = styled.section`
         align-items: center;
         flex-direction: column; 
         margin: 0 auto;
+        border: 2px solid var(--color-primary);
     }
     div{
         padding: 5px 15px;

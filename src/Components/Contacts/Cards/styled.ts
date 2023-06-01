@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const StyledCardTechs = styled.li`
     background-color: var(--color-grey-2);
-    width: 90%;
+    width: 45%;
     display: flex;
     padding: 13px 22px;
     border-radius: 4px;
@@ -22,16 +22,34 @@ export const StyledCardTechs = styled.li`
     .div{
         width: 150px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
     }
-
-    h2 {
+    .div > h2 {
         font-size: 14px;
         line-height: 22px;
         font-weight: 700;
         color: var(--color-grey-0);
     }
+
+    .trash{
+        cursor: pointer;
+    }
+    .trash:hover{
+        color: red;
+        transform: scale(1.6);
+    }
+
+    .pen{
+        cursor: pointer;
+    }
+
+    .pen:hover{
+        color: var(--color-primary);
+        transform: scale(1.4);
+    }
+
+    
     p{
         font-size: 12px;
         line-height: 22px;
@@ -44,20 +62,11 @@ export const StyledCardTechs = styled.li`
         font-weight: 400;
         color: var(--color-grey-1);
     }
-    .divIcon{
-        width: 10%;
-    }
-    .divIcon svg{
-        color: white;
-        width: 15px;
-        cursor: pointer;
-    }
-    .divIcon svg:hover{
-        width: 25px;
-    }
+
     .divImg{
         display: flex;
-        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
         gap: 30px;
     }
     img{
@@ -75,14 +84,9 @@ export const StyledCardTechs = styled.li`
         height: 20px;
     }
 
-    @media (max-width: 450px) {
-        display: flex;
-        flex-direction: column;
+    @media (max-width: 650px) {
+        width: 90%;
     }
-        .div{
-            width: 100%;
-        }
-
     @keyframes animationLI {
         0% {
             transform: translateX(0px);
@@ -91,15 +95,6 @@ export const StyledCardTechs = styled.li`
         100% {
             transform: translateX(0px);
             opacity: 100%;
-        }
-    }
-
-    @media (min-width: 450px) {
-        .div{
-            width: 50%;
-        }
-        .divIcon{
-            width: 40%;
         }
     }
 

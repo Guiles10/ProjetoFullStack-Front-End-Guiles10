@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import Logo from '../../Img/Logo.svg'
 import { StyledSecHeader } from './styled'
 
 export const Header = () => {

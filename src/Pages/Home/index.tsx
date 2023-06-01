@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { StyledSecHome } from "./styled"
 import { SecPerfil } from "../../Components/InfoUser"
 import { Header } from "../../Components/Header"

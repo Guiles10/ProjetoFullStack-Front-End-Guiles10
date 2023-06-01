@@ -28,16 +28,14 @@ export const StyledSecHome = styled.section`
     }
     .divAddList > button{
         background-color: var(--color-grey-3);
-        width: 30px;
-        height: 30px;
+        padding: 5px;
         font-size: 18px;
         line-height: 28px;
         font-weight: 700;
         color: var(--color-grey-0);
     }
     .divAddList > button:hover{
-        width: 40px;
-        height: 40px;
+        transform: scale(1.1);
         color: var(--color-primary);
     }
     .divUl{
@@ -65,6 +63,12 @@ export const StyledSecHome = styled.section`
             width: 100%;
             padding: 0;
             padding-top: 20px ;
+        }
+    }
+    
+    @media (max-width: 650px) {
+        .divCards{
+            flex-direction: column;
         }
     }
 `;
