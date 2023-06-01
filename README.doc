@@ -5,7 +5,7 @@ Para exsecutar o projeto siga o passo a passo abaixo:
 
 1 - Clone o repositório na sua Maquina.
 
-2 - utilize o comando 'npm install' para instalar as dependencias da aplicação.
+2 - utilize o comando 'yarn install' para instalar as dependencias da aplicação.
 
 3 - utilize o comando 'yarn dev' para iniciar a aplicação.
 
