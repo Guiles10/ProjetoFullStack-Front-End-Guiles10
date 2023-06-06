@@ -1,13 +1,79 @@
+# Projeto Front End - AccOrganized
+
+## Agenda Virtual
+
+### Tabela de Conteúdos
+- [Visão Geral](#visão-geral)
+- [Início Rápido](#início-rápido)
+  - [Instalando Dependências](#instalando-dependências)
+  - [Rodando a aplicação](#rodando-a-aplicação)
+
+## Visão Geral
+
+Trata-se de uma aplicação front-end que utiliza a API Agenda Virtual e é utilizada para armazenar seus contatos. A aplicação possui cadastro e login de usuário, além de CRUD de usuário e contatos. Possui um layout clean e de fácil entendimento. As tecnologias utilizadas foram:
+
+- TypeScript
+- React
+- Styled-Components
+- Zod
+- Axios
+
+## Início Rápido
+
+### Instalando Dependências
+
+Clone o projeto em sua máquina e instale as dependências com o comando:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Olá, sejá bem vindo ao Projeto Front End => AccOrganized
 
-Para exsecutar o projeto siga o passo a passo abaixo:
 
-1 - Clone o repositório na sua Maquina.
+Agenda Virtual
+Tabela de Conteúdos
+Visão Geral
+Início Rápido
+Instalando dependências
+Rodando a aplicação
+1. Visão Geral
+Voltar para o topo
 
-2 - utilize o comando 'yarn install' para instalar as dependencias da aplicação.
+Trata-se de uma aplicação front-end que utiliza a API Agenda Virtual e é utilizada para armazenar seus contatos. A aplicação possui cadastro e login de usuário, além de CRUD de usuário e contatos. Possui um layout clean e de fácil entendimento. As tecnologias utilizadas foram:
 
-3 - utilize o comando 'yarn dev' para iniciar a aplicação.
+TypeScript
+React
+Styled-Components
+Zod
+Axios
+2. Início Rápido
+Voltar para o topo
+
+2.1. Instalando Dependências
+Clone o projeto em sua máquina e instale as dependências com o comando:
+
+yarn install
+2.2 Rodando a aplicação
+Para rodar a aplicação, utilize o comando:
+
+yarn dev
+Em seguida, acesse seu navegador em: http://localhost:5173/
 
 Obs: Lembre de clonar e executar o repositóriodo Backend deste projeto para pode utilizar todas suas funcionalidades.
 
