@@ -48,4 +48,4 @@ yarn dev
 Em seguida, acesse seu navegador em: http://localhost:5173/
 
 Obs: Lembre de clonar e executar o repositório do Backend deste projeto para poder utilizar todas suas funcionalidades.
-[Link para o repositório do Backend](https://github.com/Guiles10/ProjetoFullStack-BackEnd-Guiles)
+[Link Backend](https://github.com/Guiles10/ProjetoFullStack-BackEnd-Guiles)
