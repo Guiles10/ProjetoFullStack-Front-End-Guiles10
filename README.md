@@ -1,75 +1,51 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-      margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
-    }
+# Olá, sejá bem vindo ao Projeto Front End => AccOrganized
 
-    h1 {
-      font-size: 24px;
-      color: #333;
-      margin-bottom: 20px;
-    }
+## Tabela de Conteúdos
 
-    h2 {
-      font-size: 20px;
-      color: #333;
-      margin-bottom: 10px;
-    }
+- [Visão Geral](#1-visão-geral)
+- [Início Rápido](#2-início-rápido)
+  - [Instalando dependências](#21-instalando-dependências)
+  - [Rodando a aplicação](#22-rodando-a-aplicação)
 
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
+---
 
-    code {
-      background-color: #f9f9f9;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-family: Consolas, monospace;
-      padding: 2px 4px;
-    }
+## 1. Visão Geral
 
-    a {
-      color: #0366d6;
-      text-decoration: none;
-    }
+[ Voltar para o topo ](#tabela-de-conteúdos)
 
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <h1>Projeto Front End - AccOrganized</h1>
+Trata-se de uma aplicação front-end que utiliza a [API AccOrganized](https://github.com/Guiles10/ProjetoFullStack-BackEnd-Guiles) onde são salos os cadastros e contados. A aplicação possui cadastro e login de usuário, proteção de rotas com JWT, outologuin, além do CRUD tanto para usuários como para contatos. Possui um layout clean e de fácil entendimento, e sempre traz uma resposta imediata ao usuário.
+As tecnologias utilizadas foram:
 
-  <h2>Visão Geral</h2>
-  <p>Este projeto é uma aplicação front-end desenvolvida em TypeScript, React, Styled-Components, Zod e Axios. Ele permite que os usuários cadastrem e façam login, além de realizar operações CRUD em usuários e contatos. O layout é limpo e de fácil compreensão.</p>
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://react.dev/)
+- [Styled-Components](https://styled-components.com/)
+- [Zod](https://zod.dev/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Yup](https://www.npmjs.com/package/yup/)
+- [Toastify](https://fkhadra.github.io/react-toastify/introduction/)
 
-  <h2>Início Rápido</h2>
-  <p>Siga as etapas abaixo para começar a usar o projeto AccOrganized:</p>
+---
 
-  <ol>
-    <li>
-      <h3>Instalando Dependências</h3>
-      <p>Clone o projeto em sua máquina e, em seguida, instale as dependências necessárias executando o seguinte comando:</p>
-      <code>yarn install</code>
-    </li>
-    <li>
-      <h3>Rodando a aplicação</h3>
-      <p>Para iniciar a aplicação, utilize o comando:</p>
-      <code>yarn dev</code>
-      <p>Em seguida, acesse o navegador e digite o seguinte endereço: <a href="http://localhost:5173/">http://localhost:5173/</a></p>
-    </li>
-  </ol>
+## 2. Início Rápido
 
-  <p>Certifique-se de também clonar e executar o repositório do Backend deste projeto para aproveitar todas as funcionalidades. Você pode encontrar o link para o repositório do Backend aqui: <a href="https://github.com/Guiles10/ProjetoFullStack-BackEnd-Guiles">https://github.com/Guiles10/ProjetoFullStack-BackEnd-Guiles</a></p>
+[ Voltar para o topo ](#tabela-de-conteúdos)
 
-  <p>Certifique-se de deixar o README bonito, apresentável e intuitivo para quem acessar o repositório no GitHub. Se você precisar de ajuda adicional ou tiver outras dúvidas, sinta-se à vontade para perguntar!</p>
-</body>
-</html>
+### 2.1. Instalando Dependências
+
+Clone o projeto em sua máquina e instale as dependências com o comando:
+
+```shell
+yarn install
+```
+
+### 2.2 Rodando a aplicação
+
+Para rodar a aplicação, utilize o comando:
+
+```
+yarn dev
+```
+Em seguida, acesse seu navegador em: http://localhost:5173/
+
+Obs: Lembre de clonar e executar o repositório do Backend deste projeto para poder utilizar todas suas funcionalidades.
+[Link para o repositório do Backend](https://github.com/Guiles10/ProjetoFullStack-BackEnd-Guiles)
