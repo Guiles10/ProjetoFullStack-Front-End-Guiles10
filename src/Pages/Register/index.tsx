@@ -24,7 +24,7 @@ export const Register = () => {
     const useYup = yup.object().shape({
         name:          yup.string().required('Insira seu nome').max(35, 'no maximo 35 caracteres'),
         password:      yup.string().required('Senha obrigatoria').min(8, 'Senha precisa ter no minimo 8 caracteres'),
-        telefone:      yup.string().required('Telefone obrigatoria').min(8, 'Telefone precisa ter no minimo 8 caracteres'),
+        telefone:  yup.string().required('Digite o numero de telefone com DDD').matches(/^\d{11}$/, 'Insira um número de telefone válido com DDD'),
         confirmPass:   yup.string().required('A senha precisa ser igual').oneOf([yup.ref('password')], 'A senha precisa ser igual'),
         email:         yup.string().required('E-mail é obrigatorio').email('didite um e-mail valido'),
     })
@@ -76,8 +76,8 @@ export const Register = () => {
                     <input type='text' {...register('email')} placeholder='Digite seu E-mail aqui'/>
                     {errors.email?.message && <p className='pError'>{errors.email?.message}</p>}
 
-                    <label htmlFor=''>Telefone</label>
-                    <input type='number' {...register('telefone')} placeholder='Digite seu Telefone aqui'/>
+                    <label htmlFor='telefone'>Telefone</label>
+                    <input type='tel' {...register('telefone')} placeholder='Digite seu Telefone aqui' maxLength={11}/>
                     {errors.telefone?.message && <p className='pError'>{errors.telefone.message}</p>}
 
                     <label htmlFor=''>Senha</label>
