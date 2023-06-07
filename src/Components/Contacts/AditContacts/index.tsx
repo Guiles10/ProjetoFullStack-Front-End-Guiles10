@@ -16,8 +16,8 @@ export const EditModalContacts = ({ setEditModalContact, EditContact }: any) => 
     const { infoModal } = useContext(ContactsContext)
 
     const useYup = yup.object().shape({
-        name:  yup.string().required('Digite o Nome do Contato').min(10, 'minimo de 10 carcteres'),
-        telefone:  yup.string().required('Digite o numero de telefone').min(8, 'minimo de 8 carcteres'),
+        name:  yup.string().required('Digite o Nome do Contato'),
+        telefone:  yup.string().required('Digite o numero de telefone com DDD').matches(/^\d{11}$/, 'Insira um número de telefone válido com DDD'),
         email:  yup.string().required('Digite o email').email(),
     })
 
@@ -44,8 +44,8 @@ export const EditModalContacts = ({ setEditModalContact, EditContact }: any) => 
                     <input type='text' {...register('email')} defaultValue={infoModal?.email}/>
                     {errors.email?.message && <p className='pError'>{errors.email?.message}</p>}
 
-                    <label htmlFor=''>Telefone</label>
-                    <input type='number' {...register('telefone')} defaultValue={infoModal?.telefone}/>
+                    <label htmlFor='telefone'>Telefone</label>
+                    <input type='tel' {...register('telefone')} defaultValue={infoModal?.telefone} maxLength={11}/>
                     {errors.telefone?.message && <p className='pError'>{errors.telefone?.message}</p>}
 
                     <button className='btn_submit' type='submit'>Adicionar</button>

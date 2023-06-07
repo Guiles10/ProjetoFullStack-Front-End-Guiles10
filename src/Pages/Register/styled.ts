@@ -157,6 +157,10 @@ export const StyledSec = styled.section`
         margin-right: 25px;
     }
 
+    label{
+        margin-top: 15px;
+    }
+
     @media (max-width: 800px) {
         display: flex;
         flex-direction: column-reverse;

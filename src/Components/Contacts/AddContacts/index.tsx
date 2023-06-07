@@ -12,8 +12,8 @@ interface iformadd {
 export const AddModalContacts = ({ setModalContact, NewCard }: any) => {     
     
     const useYup = yup.object().shape({
-        name:  yup.string().required('Digite o Nome do Contato').min(5, 'minimo de 5 carcteres'),
-        telefone:  yup.string().required('Digite o numero de telefone').min(8, 'minimo de 8 carcteres'),
+        name:  yup.string().required('Digite o Nome do Contato'),
+        telefone:  yup.string().required('Digite o numero de telefone com DDD').matches(/^\d{11}$/, 'Insira um número de telefone válido com DDD'),
         email:  yup.string().required('Digite o email').email('insira um e-mail valido'),
     })
 
@@ -38,8 +38,8 @@ export const AddModalContacts = ({ setModalContact, NewCard }: any) => {
                     <input type='text' {...register('email')}/>
                     {errors.email?.message && <p className='pError'>{errors.email?.message}</p>}
 
-                    <label htmlFor=''>Telefone</label>
-                    <input type='text' {...register('telefone')}/>
+                    <label htmlFor='telefone'>Telefone</label>
+                    <input type='tel' {...register('telefone')} maxLength={11}/>
                     {errors.telefone?.message && <p className='pError'>{errors.telefone?.message}</p>}
                     
                     <button className='btn_submit' type='submit'>Adicionar</button>

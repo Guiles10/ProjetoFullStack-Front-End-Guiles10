@@ -10,7 +10,7 @@ export const StyledSec = styled.section`
     max-width: 800px;
 
     .divForm{
-        max-width: 500px;
+        width: 500px;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -68,6 +68,7 @@ export const StyledSec = styled.section`
     .div_SmallLogin {
         display: flex;
         justify-content: center;
+        width: 100%;
     }
     .div_SmallLogin > small{
         max-width: 70%;
