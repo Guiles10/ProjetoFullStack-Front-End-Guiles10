@@ -1,7 +1,6 @@
 
 import { Link, useNavigate } from 'react-router-dom'
 
-import Logo from '../../Img/Logo.svg'
 import Sacola from '../../Img/sacola.svg'
 import Pontos from '../../Img/pontinhos.svg'
 
@@ -26,7 +25,7 @@ export const Register = () => {
         name:          yup.string().required('Insira seu nome').max(35, 'no maximo 35 caracteres'),
         password:      yup.string().required('Senha obrigatoria').min(8, 'Senha precisa ter no minimo 8 caracteres'),
         telefone:      yup.string().required('Telefone obrigatoria').min(8, 'Telefone precisa ter no minimo 8 caracteres'),
-        confirmPass:   yup.string().required('A senha precisa ser igual').oneOf([yup.ref('password'), null], 'A senha precisa ser igual'),
+        confirmPass:   yup.string().required('A senha precisa ser igual').oneOf([yup.ref('password')], 'A senha precisa ser igual'),
         email:         yup.string().required('E-mail é obrigatorio').email('didite um e-mail valido'),
     })
 
@@ -40,7 +39,7 @@ export const Register = () => {
     const submitFunction = async (infoRegister : iInfoRegister) => {
 
         try {
-            const resposta = await Api.post('/users', {...infoRegister})
+            await Api.post('/users', {...infoRegister})
             toast.success("Usuario cadastrado com Sucesso!")
 
             setTimeout(() => {navigate('/login')}, 2000) 
