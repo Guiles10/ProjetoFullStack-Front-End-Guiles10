@@ -28,7 +28,7 @@ export const  ContactsProvider = ({ children }: iAuthProviderChildren) => {
         const config = {headers: {Authorization: `Bearer ${token}`}}
 
         try {
-            const resposta = await Api.post('/contacts',{...infoCard}, config)
+            await Api.post('/contacts',{...infoCard}, config)
 
             toast.success("Card adicionado com Sucesso!")
         
@@ -43,7 +43,7 @@ export const  ContactsProvider = ({ children }: iAuthProviderChildren) => {
     
     const ExcluirContact = async (id: string) => {
         try{
-            const resposta = await Api.delete(`/contacts/${id}`)
+            await Api.delete(`/contacts/${id}`)
             toast.success('Card excluido com Sucesso!')
             Relod()
         }catch(error){
@@ -54,7 +54,7 @@ export const  ContactsProvider = ({ children }: iAuthProviderChildren) => {
     const [EditModalContact, setEditModalContact] = useState<Boolean>(false) 
     const EditContact = async (infoCard: iEditContact, id: string) => {
         try {
-            const resposta = await Api.patch(`/contacts/${id}`,infoCard)
+            await Api.patch(`/contacts/${id}`,infoCard)
 
             toast.success("Card Alterado com Sucesso!")
             setEditModalContact(false)
