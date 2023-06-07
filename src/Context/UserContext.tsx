@@ -7,7 +7,7 @@ export interface iInfoUser {
     id: string;
     name: string;
     email: string;
-    telefone: number;
+    telefone: string;
     createdAt: string;
     contacts: icontacts[]
 }
@@ -56,7 +56,7 @@ export const  UserProvider = ({ children }: iAuthProviderChildren) => {
     
     const ExcluirContact = async (id: string) => {
         try{
-            const resposta = await Api.delete(`/users/${id}`)
+            await Api.delete(`/users/${id}`)
             toast.success('Usuario excluido com Sucesso!')
             Relod()
         }catch(error){
@@ -69,7 +69,7 @@ export const  UserProvider = ({ children }: iAuthProviderChildren) => {
     const EditUser = async (infoUser: iEditUser, id: string) => {
         try {
             console.log(infoUser, id)
-            const resposta = await Api.patch(`/users/${id}`,infoUser)
+            await Api.patch(`/users/${id}`,infoUser)
 
             toast.success("Usuario Editado com Sucesso!")
             setOpenModalUser(false)

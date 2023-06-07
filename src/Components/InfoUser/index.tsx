@@ -10,7 +10,7 @@ export interface iuser {
     id: number;
     name: string;
     email: string;
-    telefone: number;
+    telefone: string;
     createdAt: string;
     contacts: icontacts[]
 } 
